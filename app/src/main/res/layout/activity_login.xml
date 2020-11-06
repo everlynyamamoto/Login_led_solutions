@@ -23,8 +23,10 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView2"
@@ -46,12 +48,13 @@
             app:layout_constraintVertical_bias="0.163" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="181dp"
-            android:layout_height="158dp"
-            app:srcCompat="@drawable/ic_baseline_account_circle_24"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="162dp" />
+            android:id="@+id/image_login"
+            android:layout_width="196dp"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_baseline_monetization_on_24"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="145dp" />
 
         <EditText
             android:id="@+id/username"
@@ -97,6 +100,22 @@
             app:backgroundTint="@color/teal_700"
             app:layout_constraintBottom_toTopOf="@+id/username"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.564" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="133dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="850dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/register"
+            app:backgroundTint="#6B7373"
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.803"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.564" />

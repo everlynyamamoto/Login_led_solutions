@@ -11,4 +11,12 @@
     <string name="login_failed">"Login failed"</string>
     <string name="password">Password</string>
     <string name="led_solutions_name">LED Solutions</string>
+    <string name="Name">Username</string>
+    <string name="email_login">Email</string>
+    <string name="email_register">Email</string>
+    <string name="name">Nome</string>
+    <string name="cellphone">Celular</string>
+    <string name="cpf">CPF</string>
+    <string name="sign_in">Cadastre-se</string>
+    <string name="register">Cadastrar</string>
 </resources>
