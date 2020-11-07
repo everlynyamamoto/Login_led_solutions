@@ -10,38 +10,72 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/buttonBack"
         app:backgroundTint="#808080"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textPrincipalWallet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textPrincipalWallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="33dp"
         android:text="@string/textPrincipalWallet"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="85dp" />
+        app:layout_constraintBottom_toTopOf="@+id/accountBalance"
+        app:layout_constraintStart_toStartOf="@+id/accountBalance"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+    <ImageView
+        android:id="@+id/wallet_icon"
+        android:layout_width="161dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallet" />
 
     <Button
         android:id="@+id/accountBalance"
-        android:layout_width="272dp"
-        android:layout_height="135dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/accountBalance"
         android:textSize="18sp"
-        app:backgroundTint="#4DB6AC"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:backgroundTint="#6fa0df"
+        app:layout_constraintBottom_toTopOf="@+id/investment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPrincipalWallet" />
 
     <Button
         android:id="@+id/investment"
-        android:layout_width="272dp"
-        android:layout_height="135dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="67dp"
         android:text="@string/investment"
         android:textSize="18sp"
-        app:backgroundTint="#00695C"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="492dp" />
+        app:backgroundTint="#0097A7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountBalance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
