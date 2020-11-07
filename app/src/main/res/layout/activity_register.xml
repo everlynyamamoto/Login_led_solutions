@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
-    <ImageView
-        android:id="@+id/image_register"
-        android:layout_width="209dp"
-        android:layout_height="183dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
-
     <TextView
         android:id="@+id/register"
         android:layout_width="256dp"
@@ -31,17 +20,15 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.477" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="133dp"
-        app:layout_constraintBottom_toTopOf="@+id/image_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -52,35 +39,23 @@
         android:id="@+id/username"
         android:layout_width="334dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="347dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="505dp"
         android:hint="hint"
         android:text="@string/name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintTop_toBottomOf="@+id/image_register" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="338dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="400dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="@string/email_login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="339dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="468dp"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="345dp"
         android:ems="10"
         android:inputType="phone"
         android:text="@string/cellphone"
@@ -89,21 +64,60 @@
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="343dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
         tools:text="@string/cpf" />
 
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/email_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="475dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/passwordRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordRegisterConfirm"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="540dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/PasswordRegisterConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/register2"
-        android:layout_width="133dp"
-        android:layout_height="68dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginTop="850dp"
         android:layout_marginBottom="10dp"
         android:text="@string/register"
@@ -112,6 +126,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.251" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
